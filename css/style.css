@@ -54,6 +54,9 @@ h6 {
 
 /* Prelaoder */
 
+
+/*     overflow: visible; */
+
 #preloader {
     position: fixed;
     left: 0;
@@ -61,7 +64,6 @@ h6 {
     z-index: 999;
     width: 100%;
     height: 100%;
-    overflow: visible;
     background: #fff url("../img/preloader.svg") no-repeat center center;
 }
 
@@ -146,6 +148,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
+    overflow: hidden;
     height: 90px;
     padding: 25px 0;
     position: fixed;
@@ -1098,10 +1101,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #gallery .owl-dot.active {
     background-color: #FFC107;
-}
-
-#gallery .gallery-carousel .owl-stage-outer {
-    overflow: visible;
 }
 
 #gallery .gallery-carousel .center {
