@@ -136,6 +136,42 @@
             </div>
         </section>
 
+        <!-- Modal -->
+        <div class="modal fade" id="speakerModal" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="section-header">
+                                <h2>Speaker name</h2>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img id="modal-pic" src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="details">
+                                        <!--  <div class="social">
+                                            <a class="twitter" href=""><i class="fa fa-twitter"></i></a>
+                                            <a href=""><i class="fa fa-linkedin"></i></a>
+                                        </div> -->
+                                        <p>Voluptatem perferendis sed assumenda voluptatibus. Laudantium molestiae sint. Doloremque odio dolore dolore sit. Quae labore alias ea omnis ex expedita sapiente molestias atque. Optio voluptas et.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!--==========================
       Speakers Section
     ============================-->
@@ -143,101 +179,96 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Speakers</h2>
-                    <p> Próximamente pondremos los speakers del evento</p>
                 </div>
 
-                <!-- <div class="row">
+                <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <div class="speaker">
-                            <img src="img/speakers/1.jpg" alt="Speaker 1" class="img-fluid">
+                            <img src="img/speakers/eleazar.png" alt="Speaker 1" class="img-fluid">
                             <div class="details">
-                                <h3><a href="speaker-details.html">Brenden Legros</a></h3>
-                                <p>Quas alias incidunt</p>
+                                <h3><a href="" data-toggle="modal" data-id="0" class="openSpeakerModal" data-target="#speakerModal">Eleazar Morales Díaz</a></h3>
+                                <p>Bots</p>
                                 <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://twitter.com/axaryk"><i class="fa fa-twitter"></i></a>
+                                    <a href="" data-toggle="modal" data-id="0" class="openSpeakerModal" data-target="#speakerModal">BIO</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="speaker">
+                            <img src="img/speakers/gema.png" alt="Speaker 2" class="img-fluid">
+                            <div class="details">
+                                <h3><a href="" data-toggle="modal" data-id="1" class="openSpeakerModal" data-target="#speakerModal">Gema Socorro Rodriguez</a></h3>
+                                <p>Android, Koin</p>
+                                <div class="social">
+                                    <a href="https://twitter.com/gemamsr"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/gemasr"><i class="fa fa-linkedin"></i></a>
+                                    <a href="" data-toggle="modal" data-id="1" class="openSpeakerModal" data-target="#speakerModal">BIO</a>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="speaker">
-                            <img src="img/speakers/2.jpg" alt="Speaker 2" class="img-fluid">
+                            <img src="img/speakers/daniel.png" alt="Speaker 3" class="img-fluid">
                             <div class="details">
-                                <h3><a href="speaker-details.html">Hubert Hirthe</a></h3>
-                                <p>Consequuntur odio aut</p>
+                                <h3><a href="" data-toggle="modal" data-id="2" class="openSpeakerModal" data-target="#speakerModal">Daniel Martín Lambea</a></h3>
+                                <p>Cloud, Go</p>
                                 <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://twitter.com/dmlambea"><i class="fa fa-twitter"></i></a>
+                                    <a href="" data-toggle="modal" data-id="2" class="openSpeakerModal" data-target="#speakerModal">BIO</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="speaker">
-                            <img src="img/speakers/3.jpg" alt="Speaker 3" class="img-fluid">
+                            <img src="img/speakers/bacallado.png" alt="Speaker 4" class="img-fluid">
                             <div class="details">
-                                <h3><a href="speaker-details.html">Cole Emmerich</a></h3>
-                                <p>Fugiat laborum et</p>
+                                <h3><a href="" data-toggle="modal" data-id="3" class="openSpeakerModal" data-target="#speakerModal">Manuel Alejandro Bacallado</a></h3>
+                                <p>Test, Apps móviles </p>
                                 <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://twitter.com/manuelbacallado"><i class="fa fa-twitter"></i></a>
+                                    <a href="" data-toggle="modal" data-id="3" class="openSpeakerModal" data-target="#speakerModal">BIO</a>
+
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="speaker">
-                            <img src="img/speakers/4.jpg" alt="Speaker 4" class="img-fluid">
+                            <img src="img/speakers/lissette.png" alt="Speaker 5" class="img-fluid">
                             <div class="details">
-                                <h3><a href="speaker-details.html">Jack Christiansen</a></h3>
-                                <p>Debitis iure vero</p>
+                                <h3><a href="" data-toggle="modal" data-id="4" class="openSpeakerModal" data-target="#speakerModal">Sara Lissette Luis Ibáñez</a></h3>
+                                <p>TypeScript, VueJs, React</p>
                                 <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://twitter.com/LissetteIbnz"><i class="fa fa-twitter"></i></a>
+                                    <a href="" data-toggle="modal" data-id="4" class="openSpeakerModal" data-target="#speakerModal">BIO</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="speaker">
-                            <img src="img/speakers/5.jpg" alt="Speaker 5" class="img-fluid">
+                            <img src="img/speakers/roberto.png" alt="Speaker 6" class="img-fluid">
                             <div class="details">
-                                <h3><a href="speaker-details.html">Alejandrin Littel</a></h3>
-                                <p>Qui molestiae natus</p>
+                                <h3><a href="" data-toggle="modal" data-id="5" class="openSpeakerModal" data-target="#speakerModal">Roberto Diaz</a></h3>
+                                <p>Full-stack</p>
                                 <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://twitter.com/rdiaz82"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.linkedin.com/in/rdiaz82"><i class="fa fa-linkedin"></i></a>
+                                    <a href="" data-toggle="modal" data-id="5" class="openSpeakerModal" data-target="#speakerModal">BIO</a>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="speaker">
-                            <img src="img/speakers/6.jpg" alt="Speaker 6" class="img-fluid">
-                            <div class="details">
-                                <h3><a href="speaker-details.html">Willow Trantow</a></h3>
-                                <p>Non autem dicta</p>
-                                <div class="social">
-                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                    <a href=""><i class="fa fa-google-plus"></i></a>
-                                    <a href=""><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+                </div>
             </div>
 
         </section>
@@ -251,16 +282,15 @@
             <div class="container wow fadeInUp">
                 <div class="section-header">
                     <h2>Planificación del evento</h2>
-                    <p>Próximamente tendremos definida toda la planificación del evento</p>
                 </div>
                 <!-- <h3 class="sub-heading"> Todas nuestras ponencias las grabarán los profecionales de <a href="https://phrygian.es/">Phrygian Studio</a></h3> -->
 
-                <!-- <div class="tab-content row justify-content-center">
+                <div class="tab-content row justify-content-center">
 
                     <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
 
                         <div class="row schedule-item">
-                            <div class="col-md-2"><time>17:30</time></div>
+                            <div class="col-md-2"><time>18:00</time></div>
                             <div class="col-md-10">
                                 <h4>Bienvenida</h4>
                                 <p></p>
@@ -268,49 +298,105 @@
                         </div>
 
                         <div class="row schedule-item">
-                            <div class="col-md-2"><time>18:00 </time></div>
+                            <div class="col-md-2"><time>18:05 </time></div>
                             <div class="col-md-10">
                                 <div class="speaker">
-                                    <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                                    <img src="img/speakers/eleazar.png" alt="Eleazar Morales Díaz">
                                 </div>
-                                <h4> Ponencia <span> #1 </span></h4>
-                                <p>Próximamente.</p>
+                                <h4 id="info-1"><span> K.I.S.S. BOT  </span> Eleazar Morales Díaz </h4>
+                                <a data-toggle="collapse" class="collapsed" href="#inf1"> <i class="fa fa-plus-circle"></i></a>
+                                <div id="inf1" class="collapse" data-parent="#info-1">
+                                    <p>Haremos un bot sencillo de Telegram en menos de 20 minutos. ¿Nos dará tiempo?</p>
+
+                                </div>
                             </div>
                         </div>
 
                         <div class="row schedule-item">
-                            <div class="col-md-2"><time>18:30 </time></div>
+                            <div class="col-md-2"><time>18:20 </time></div>
                             <div class="col-md-10">
                                 <div class="speaker">
-                                    <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                                    <img src="img/speakers/gema.png" alt="Gema Socorro Rodriguez">
                                 </div>
-                                <h4> Ponencia <span> #2 </span></h4>
-                                <p>Próximamente.</p>
+                                <h4 id="info-2"> <span> Dependency Injection con Koin </span> Gema Socorro Rodriguez </h4>
+                                <a data-toggle="collapse" class="collapsed" href="#inf2"> <i class="fa fa-plus-circle"></i></a>
+                                <div id="inf2" class="collapse" data-parent="#info-2">
+                                    <p>La inyección de dependencias es una técnica ampliamente utilizada en las aplicaciones de Android hoy en día. Permite a los/as desarrolladores/as desacoplar componentes y hacerlos más testeables y modulares (y por tanto,
+                                        fáciles de mantener). Koin es una librería realmente fácil de comprender, de configurar y de utilizar. En esta charla, mi intención es que la audiencia corra hacia sus ordenadores y comience a usar Koin inmediatamente
+                                        después de que haya terminado (o algo así;)). Esta charla está destinada a principiantes en su primer contacto con un framework de inyección de dependencias, y mostraré los conceptos básicos y algunos ejemplos de
+                                        código de lo que encontrarán en el trabajo diario basado en mi propia experiencia.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>18:40 </time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/daniel.png" alt="Daniel Martín Lambea">
+                                </div>
+                                <h4 id="info-3"> <span> Programando para Cloud en Go </span> Daniel Martín Lambea </h4>
+                                <a data-toggle="collapse" class="collapsed" href="#inf3"> <i class="fa fa-plus-circle"></i></a>
+                                <div id="inf3" class="collapse" data-parent="#info-3">
+                                    <p>Primer contacto con el lenguaje Go, sus características para cloud y mi experiencia con Go en el Cabildo de Tenerife</p>
+                                </div>
+
                             </div>
                         </div>
                         <div class="row schedule-item">
                             <div class="col-md-2"><time>19:00 </time></div>
                             <div class="col-md-10">
                                 <div class="speaker">
-                                    <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                                    <img src="img/speakers/bacallado.png" alt="Manuel Alejandro Bacallado López">
                                 </div>
-                                <h4> Ponencia <span> #3 </span></h4>
-                                <p>Próximamente.</p>
+                                <h4 id="info-4"> <span> Appium: Framework para crear tests que automaticen pruebas en aplicaciones móviles. </span> Manuel Alejandro Bacallado López </h4>
+                                <a data-toggle="collapse" class="collapsed" href="#inf4"> <i class="fa fa-plus-circle"></i></a>
+                                <div id="inf4" class="collapse" data-parent="#info-4">
+                                    <p>Appium es una libreria de código abierto para crear test que automaticen pruebas de UX/UI en aplicaciones móviles. Esto ayuda a agilizar el proceso de desarrollo de software y a minimizar el tiempo y los recursos en
+                                        la fase de test, que de otra manera tendría que realizarse de forma manual. En la charla, se mostrará un ejemplo de test de una aplicación en android puesta en producción.</p>
+                                </div>
+
                             </div>
                         </div>
                         <div class="row schedule-item">
-                            <div class="col-md-2"><time>19:30 </time></div>
+                            <div class="col-md-2"><time>19:20 </time></div>
                             <div class="col-md-10">
                                 <div class="speaker">
-                                    <img src="img/speakers/1.jpg" alt="Brenden Legros">
+                                    <img src="img/speakers/lissette.png" alt="Sara Lissette Luis Ibáñez">
                                 </div>
-                                <h4> Ponencia <span> #4 </span></h4>
-                                <p>Próximamente.</p>
+                                <h4 id="info-5"> <span> Introducción a los tipos avanzados de TypeScript </span>Sara Lissette Luis Ibáñez </h4>
+                                <a data-toggle="collapse" class="collapsed" href="#inf5"> <i class="fa fa-plus-circle"></i></a>
+                                <div id="inf5" class="collapse" data-parent="#info-5">
+                                    <p>
+                                        Esta charla será una breve introducción que intentará mostrar la potencia que te aporta el uso de TypeScript en tus desarrollos. Veremos en vivo cómo escribiendo unas pocas líneas de código podemos agilizar y sacar más rendimiento a nuestros componentes.
+
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
+                        <div class="row schedule-item">
+                            <div class="col-md-2"><time>19:40 </time></div>
+                            <div class="col-md-10">
+                                <div class="speaker">
+                                    <img src="img/speakers/roberto.png" alt="Manuel Alejandro Bacallado López">
+                                </div>
+                                <h4 id="info-6"> <span> Explorando el mundo microscópico con OpenWhisk y Rust </span>Roberto Diaz </h4>
+                                <a data-toggle="collapse" class="collapsed" href="#inf6"> <i class="fa fa-plus-circle"></i></a>
+                                <div id="inf6" class="collapse" data-parent="#info-6">
+                                    <p>
+                                        El procesado de imágenes biológicas desempeña un rol importante en un amplio rango de aplicaciones en biología, biología molecular y neurociencia. La visualización y el análisis de imágenes es crucial para entender características o procesos celulares
+                                        de una forma directa y precisa. Esta charla explora el uso de Apache OpenWhisk para hacer procesado de imágenes por medio de tecnologías Serverless y Rust como principal lenguaje de programación. Vamos a mostrar
+                                        como se puede usar Apache OpenWhisk para el procesado de imágenes biológicas. Vamos a desarrollar un sistema para la determinación de la calidad de colonias de levadura durante el proceso de producción de cerveza
+                                        por medio de imágenes. Durante la charla es explicará a grandes rasgos como funciona Apache OpenWhisk, como se puede llevar a cabo el procesado de imágenes con Rust y como se puede determinar la calidad de una colonia
+                                        de levadura por medio de imágenes.
+                                    </p>
+                                </div>
 
+                            </div>
+                        </div>
                     </div>
-              </div> -->
+                </div>
 
             </div>
 
@@ -522,11 +608,11 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="entradasModel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="entradasModel" tabindex="-1" role="dialog" aria-labelledby="speakerModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Entradas</h5>
+                    <h5 class="modal-title" id="speakerModalLabel">Entradas</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

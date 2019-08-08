@@ -143,4 +143,30 @@ jQuery(document).ready(function($) {
         $('#myInput').trigger('focus')
     })
 
+    var speakers = JSON.parse('{ "speakers" : [' +
+        '{ "name":"Eleazar Morales Díaz" , "email":"moralesdiazeleazar@gmail.com", "twitter":"https://twitter.com/axaryk", "img":"img/speakers/eleazar.png", ' +
+        '"bio":"Graduado en Ingeniería Informática en Tecnologías de la Información. Se caracteriza por ser una persona motivada en aprender nuevas tecnologías, herramientas y How-To que simplifiquen y automaticen nuestra vida. Ama el deporte, los proyectos DIY, la vida sana y atormentar al personal con sus cánticos aleatorios."   },' +
+        '{ "name":"Gema Socorro Rodriguez" , "email":"info@gemasr.com", "twitter":"https://twitter.com/gemamsr", "img":"img/speakers/gema.png", ' +
+        '"bio":"Empecé a programar apps para Android hace más de 10 años. Por el camino también hice algunas apps para iOS, algún backend con Python y cuando conocí  Flutter me enamoré! Pero no puedo disimular que mi lenguaje de programación favorito es Kotlin. Me encanta la comunidad que contribuye con Android, personas que sin conocerme han tenido un impacto real en mi carrera y mis conocimientos del framework por el que estoy muy agradecida. Es por ello que me encanta compartir (lo poco!) que sé después de estos años como forma de contribuir a esta comunidad."   },' +
+        '{ "name":"Daniel Martín Lambea" , "email":"dmlambea@gmail.com", "twitter":"https://twitter.com/dmlambea", "img":"img/speakers/daniel.png",  ' +
+        '"bio":"Experto en Go" }, ' +
+        '{ "name":"Manuel Alejandro Bacallado López" , "email":"manuelbacallado89@gmail.com", "twitter":"https://twitter.com/manuelbacallado", "img":"img/speakers/bacallado.png", ' +
+        '"bio":"Ingeniero de software. Desarrollador de aplicaciones móviles y diseñador de videojuegos. Amante de las metodologías ágiles y los patrones de diseño. En su tiempo libre se complica la vida con nuevas ideas, proyectos y tecnologías."  }, ' +
+        '{ "name":"Sara Lissette Luis Ibáñez" , "email":"lissette.ibnz@gmail.com", "twitter":"https://twitter.com/LissetteIbnz", "img":"img/speakers/lissette.png", ' +
+        '"bio":"Desarrolladora Fullstack a la que le apasiona TypeScript, VueJs y React."}, ' +
+        '{ "name":"Roberto Diaz" , "email":"roberto@theagilemonkeys.com", "twitter":"https://twitter.com/rdiaz82 ", "img":"img/speakers/roberto.png", ' +
+        '"bio":"Soy Software Developer en The Agile Monkeys y un apasionado de la tecnología. Hace ya más de 10 años que trabajo como desarrollador full-stack y no dejo de aprender cosas nuevas y de asombrarme con todo lo que se puede llegar a hacer con la tecnología.     Durante todos estos años he trabajado en algunos proyectos relacionados con el procesado de imagen en tiempo real y realidad aumentada aunque he dedicado la mayor parte de mi tiempo a trabajar en tecnologías móviles y algo de trabajo de server. Desde hace aproximadamente un año y medio empecé a meterme en el mundo de las tecnologías serverless y desde entonces he intentado aprender todo lo posible porque creo que el futuro de la tecnología viene de la mano de todas las tecnologías serverless. "  }' +
+        ']}');
+
+
+    $(document).on("click", ".openSpeakerModal", function() {
+        var authorId = $(this).data('id');
+        var author = speakers.speakers[authorId];
+        $(".modal-body .container .section-header h2").text(author.name);
+        $(".modal-body .container .details p").text(author.bio);
+        console.log("-->" + author.img);
+        $("#modal-pic").attr('src', author.img);
+
+    });
+
 });
