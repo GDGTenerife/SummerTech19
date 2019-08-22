@@ -763,7 +763,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: rgba(2, 136, 209, 0.76);
     position: absolute;
     left: 0;
-    bottom: -30px;
+    bottom: -60px;
     right: 0;
     text-align: center;
     padding-top: 10px;
